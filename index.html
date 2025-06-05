@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Solution Lab | Research & Data Analytics Solutions</title>
+    <meta name="description" content="Professional research, data analytics, and AI solutions for academia and business">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/fav-removebg-preview.png">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <!-- <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">DATA SOLUTION LAB</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <nav class="navbar">
+        <div class="container">
+            <!-- <a href="#" class="logo"> <img src="images/logo-removebg-preview.png" alt="Data Solution Lab Logo" /> </a> -->
+            <a href="#" class="logo"> <img src="images/IMG_1583-removebg-preview.png" alt="Data Solution Lab Logo" /> </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="images/JPTMY9CPE73V70HT.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Optional Particle Overlay -->
+    <div class="particles-js" id="particles-js"></div>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Transforming Data Into <span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
+            <p class="hero-subtitle">Research, Analytics & AI Solutions for Academia and Business</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Our Services</a>
+                <a href="#contact" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Icon -->
+    <div class="scroll-down">
+        <a href="#services"><i class="fas fa-chevron-down"></i></a>
+    </div>
+</section>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const video = document.querySelector('.background-video');
+        if (video) {
+            video.muted = true;
+            video.loop = true;
+            video.play().catch(err => {
+                console.error("Video failed to autoplay:", err);
+            });
+        }
+    });
+</script>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">We provide comprehensive data solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>Research & Project Writing</h3>
+                        </div>
+                        <div class="service-card-back">
+                            <p>Professional research assistance and academic project writing for students and researchers.</p>
+                            <a href="#contact" class="btn btn-small">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3>Data Analytics & Visualization</h3>
+                        </div>
+                        <div class="service-card-back">
+                            <p>Transform your raw data into meaningful insights with powerful visualizations.</p>
+                            <a href="#contact" class="btn btn-small">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h3>Business Intelligence</h3>
+                        </div>
+                        <div class="service-card-back">
+                            <p>Data-driven business solutions to help you make informed decisions.</p>
+                            <a href="#contact" class="btn btn-small">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Machine Learning & AI</h3>
+                        </div>
+                        <div class="service-card-back">
+                            <p>Build intelligent systems and predictive models powered by AI.</p>
+                            <a href="#contact" class="btn btn-small">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Web Development</h3>
+                        </div>
+                        <div class="service-card-back">
+                            <p>Custom web applications and responsive websites for your business.</p>
+                            <a href="#contact" class="btn btn-small">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Academic Consultancy</h3>
+                        </div>
+                        <div class="service-card-back">
+                            <p>Expert guidance for academic research, thesis, and publications.</p>
+                            <a href="#contact" class="btn btn-small">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">Who we are and what we stand for</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>Empowering researchers and businesses with cutting-edge data solutions that drive innovation and growth.</p>
+                    
+                    <h3>Our Vision</h3>
+                    <p>To become Africa's leading data consultancy hub by 2030, bridging the gap between data and decision-making.</p>
+                    
+                    <h3>Our Values</h3>
+                    <ul class="values-list">
+                        <li><i class="fas fa-check-circle"></i> Excellence in every solution</li>
+                        <li><i class="fas fa-check-circle"></i> Innovation through technology</li>
+                        <li><i class="fas fa-check-circle"></i> Integrity in all our dealings</li>
+                        <li><i class="fas fa-check-circle"></i> Client-focused approach</li>
+                    </ul>
+                </div>
+                <div class="about-skills">
+                    <h3>Our Expertise</h3>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress python"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>R</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress r"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>Data Visualization</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress dataviz"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>Machine Learning</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress ml"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider"></div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Team</h2>
+                <p class="section-subtitle">Meet the brilliant minds behind Data Solution Lab</p>
+            </div>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <div class="team-img">
+                            <img src="images/team/serifat.jpg" alt="Dr. Serifat Folorunso">
+                        </div>
+                        <div class="team-info">
+                            <h3>Dr. Serifat Folorunso</h3>
+                            <p>Founder & Lead Researcher</p>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <div class="team-img">
+                            <img src="images/richie mighty.png" alt="Kehinde Richard Oluwaseun">
+                        </div>
+                        <div class="team-info">
+                            <h3>Kehinde Richard Oluwaseun</h3>
+                            <p>Co-Founder & Data Scientist</p>
+                            <p> Statistician | Data Scientist | Full Stack Developer</p>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <div class="team-img">
+                            <img src="images/ibrahim.jpg" alt="Fayemi Ibrahim">
+                        </div>
+                        <div class="team-info">
+                            <h3>Fayemi Ibrahim</h3>
+                            <p>Co-Founder & Researcher</p>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technologies We Use</h2>
+                <p class="section-subtitle">Our toolbox for delivering exceptional solutions</p>
+            </div>
+            <div class="tech-slider">
+                <div class="tech-slide">
+                    <img src="assets/icons/python.svg" alt="Python">
+                    <span>Python</span>
+                </div>
+                <div class="tech-slide">
+                    <img src="assets/icons/r.svg" alt="R">
+                    <span>R</span>
+                </div>
+                <div class="tech-slide">
+                    <img src="assets/icons/excel.svg" alt="Excel">
+                    <span>Excel</span>
+                </div>
+                <div class="tech-slide">
+                    <img src="assets/icons/powerbi.svg" alt="Power BI">
+                    <span>Power BI</span>
+                </div>
+                <div class="tech-slide">
+                    <img src="assets/icons/spss.svg" alt="SPSS">
+                    <span>SPSS</span>
+                </div>
+                <div class="tech-slide">
+                    <img src="assets/icons/tableau.svg" alt="Tableau">
+                    <span>Tableau</span>
+                </div>
+                <div class="tech-slide">
+                    <img src="assets/icons/html5.svg" alt="HTML5">
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-slide">
+                    <img src="assets/icons/css3.svg" alt="CSS3">
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-slide">
+                    <img src="assets/icons/js.svg" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-slide">
+                    <img src="assets/icons/react.svg" alt="React">
+                    <span>React</span>
+                </div>
+                <div class="tech-slide">
+                    <img src="assets/icons/nodejs.svg" alt="Node.js">
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-slide">
+                    <img src="assets/icons/django.svg" alt="Django">
+                    <span>Django</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-subtitle">Some of our recent projects</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+                <button class="filter-btn" data-filter="analytics">Analytics</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="research">
+                    <div class="portfolio-img">
+                        <img src="images/projects/research1.jpg" alt="Academic Research Project">
+                        <div class="portfolio-overlay">
+                            <h3>Academic Research</h3>
+                            <p>Statistical analysis for PhD thesis</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="analytics">
+                    <div class="portfolio-img">
+                        <img src="images/projects/analytics1.jpg" alt="Business Analytics Dashboard">
+                        <div class="portfolio-overlay">
+                            <h3>Business Dashboard</h3>
+                            <p>Interactive Power BI dashboard</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="images/projects/web1.jpg" alt="E-commerce Website">
+                        <div class="portfolio-overlay">
+                            <h3>E-commerce Platform</h3>
+                            <p>React & Node.js application</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="research">
+                    <div class="portfolio-img">
+                        <img src="images/projects/research2.jpg" alt="Scientific Publication">
+                        <div class="portfolio-overlay">
+                            <h3>Scientific Publication</h3>
+                            <p>Data analysis for journal article</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="analytics">
+                    <div class="portfolio-img">
+                        <img src="images/projects/analytics2.jpg" alt="Healthcare Analytics">
+                        <div class="portfolio-overlay">
+                            <h3>Healthcare Analytics</h3>
+                            <p>Predictive modeling for patient outcomes</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="images/projects/web2.jpg" alt="University Portal">
+                        <div class="portfolio-overlay">
+                            <h3>University Portal</h3>
+                            <p>Student management system</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-subtitle">What our clients say about us</p>
+            </div>
+            <div class="testimonial-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-img">
+                            <img src="images/clients/client1.jpg" alt="Client">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>"Data Solution Lab transformed my PhD research with their exceptional data analysis skills. The insights they provided were invaluable to my dissertation."</p>
+                            <h3>Dr. Amina Yusuf</h3>
+                            <span>University Lecturer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-img">
+                            <img src="images/clients/client2.jpg" alt="Client">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>"The business intelligence dashboard they created helped us identify cost-saving opportunities we never knew existed. Highly recommended!"</p>
+                            <h3>Oluwaseun Adebayo</h3>
+                            <span>CEO, Retail Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-img">
+                            <img src="images/clients/client3.jpg" alt="Client">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>"Their machine learning model improved our customer retention by 30%. The team is professional, knowledgeable, and delivers on time."</p>
+                            <h3>Fatima Mohammed</h3>
+                            <span>Marketing Director</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Get in touch for your data solutions</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p>datasolution.lab1@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Phone</h3>
+                            <p>+234 902 084 9397</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>WhatsApp</h3>
+                            <p>+234 902 084 9397</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/company/data-solution-lab</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>DATA SOLUTION LAB</h3>
+                    <p>Providing research, academic, and data-related consultancy services with excellence and innovation.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Research & Project Writing</a></li>
+                        <li><a href="#">Data Analytics</a></li>
+                        <li><a href="#">Business Intelligence</a></li>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Academic Consultancy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and insights.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="year"></span> Data Solution Lab. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/2349020849397" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Back to Top -->
+    <div class="back-to-top">
+        <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
